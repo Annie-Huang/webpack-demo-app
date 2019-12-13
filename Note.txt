@@ -2,4 +2,15 @@ https://www.youtube.com/watch?v=MpGLUVbqoYQ
 https://github.com/Colt/webpack-demo-app
 https://github.com/Annie-Huang/webpack-demo-app
 
+https://webpack.js.org/
+https://github.com/webpack/webpack
 =========================================================
+
+A bundler for javascript and friends. Packs many modules into a few bundled assets.
+Code Splitting allows for loading parts of the application on demand.
+Through "loaders", modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff.
+
+The 2 Main things Webpack does:
+- It bundles our code/assets together
+- It manages dependencies
+
