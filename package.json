@@ -4,7 +4,9 @@
   "private": true,
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "webpack"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Annie-Huang/webpack-demo-app.git"
