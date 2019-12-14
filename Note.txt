@@ -24,6 +24,9 @@ Error of:
 ERROR in Entry module not found: Error: Can't resolve './src' in 'C:\react\webpack-demo-app'
 >> This is be default in node application, they expect you to have a ./src/index.js as a default entry file.
 
+Added ./src/index.js and run "npm run start", and we get:
+Entrypoint main = main.js
+>> .dist/main.js is created
 
 
 
