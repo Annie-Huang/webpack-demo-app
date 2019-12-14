@@ -8,8 +8,9 @@ https://github.com/webpack/webpack
 https://webpack.js.org/loaders/
 https://github.com/webpack-contrib/awesome-webpack#loaders      << Very good list
 https://webpack.js.org/loaders/css-loader/
+https://webpack.js.org/loaders/style-loader/
 
-=========================================================
+#############################################################################################
 
 A bundler for javascript and friends. Packs many modules into a few bundled assets.
 Code Splitting allows for loading parts of the application on demand.
@@ -19,13 +20,39 @@ The 2 Main things Webpack does:
 - It bundles our code/assets together
 - It manages dependencies
 
+-----------------------------------
 
 test: /\.css$/,
 $ means it ends
 \ is for escape, it needs the escape character before .
 
+-------------------------------------
 
-==========================================================
+css-loader: convert css into js code.
+            Loads CSS file with resolved imports and returns CSS code
+e.g. body {
+         background: purple;
+     }
+     to
+     exports.push([module.i, "body {\r\n    background: purple;\r\n}\r\n", ""]);
+
+
+style-load: take a js script (contains the css) and inject into the DOM.
+            Add exports of a module as style to DOM
+            Automatically injects styles into the DOM using multiple <style></style>. It is default behaviour.
+
+use: ['style-loader', 'css-loader'],
+            The loading is actually in reverse order. The above means css-loader will be used first and it will out put the js.
+            And then the js will be injected as a input of the style-loader.
+            We now should be able to see the background is purple.
+            And if you go to chrome developer tool -> Element -> <head>, you will see
+            <style>body {
+                background: purple;
+            }
+            </style>
+
+
+#############################################################################################
 
 C:\react\webpack-demo-app>npm init -y
 C:\react\webpack-demo-app>npm install --save-dev webpack webpack-cli
