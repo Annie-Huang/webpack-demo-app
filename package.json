@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Annie-Huang/webpack-demo-app#readme",
   "devDependencies": {
+    "bootstrap": "^4.4.1",
     "css-loader": "^3.3.2",
     "style-loader": "^1.0.1",
     "webpack": "^4.41.2",

@@ -67,8 +67,8 @@ Entrypoint main = main.js
 >> .dist/main.js is created
 
 
-C:\react\webpact\webpack-demo-app>npm install --save-dev style-loader css-loader
-
+C:\react\webpack-demo-app>npm install --save-dev style-loader css-loader
+C:\react\webpack-demo-app>npm install --save-dev bootstrap
 
 
 
