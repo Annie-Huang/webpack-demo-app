@@ -4,6 +4,11 @@ https://github.com/Annie-Huang/webpack-demo-app
 
 https://webpack.js.org/
 https://github.com/webpack/webpack
+
+https://webpack.js.org/loaders/
+https://github.com/webpack-contrib/awesome-webpack#loaders      << Very good list
+https://webpack.js.org/loaders/css-loader/
+
 =========================================================
 
 A bundler for javascript and friends. Packs many modules into a few bundled assets.
@@ -13,6 +18,12 @@ Through "loaders", modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON,
 The 2 Main things Webpack does:
 - It bundles our code/assets together
 - It manages dependencies
+
+
+test: /\.css$/,
+$ means it ends
+\ is for escape, it needs the escape character before .
+
 
 ==========================================================
 
@@ -29,6 +40,7 @@ Entrypoint main = main.js
 >> .dist/main.js is created
 
 
+C:\react\webpact\webpack-demo-app>npm install --save-dev style-loader css-loader
 
 
 
