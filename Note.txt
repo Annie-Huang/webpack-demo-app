@@ -9,6 +9,7 @@ https://webpack.js.org/loaders/
 https://github.com/webpack-contrib/awesome-webpack#loaders      << Very good list
 https://webpack.js.org/loaders/css-loader/
 https://webpack.js.org/loaders/style-loader/
+https://webpack.js.org/loaders/sass-loader/
 
 #############################################################################################
 
@@ -69,7 +70,7 @@ Entrypoint main = main.js
 
 C:\react\webpack-demo-app>npm install --save-dev style-loader css-loader
 C:\react\webpack-demo-app>npm install --save-dev bootstrap
-
+C:\react\webpack-demo-app>npm install sass-loader node-sass --save-dev
 
 
 
