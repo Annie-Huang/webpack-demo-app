@@ -22,6 +22,8 @@ https://webpack.js.org/guides/development/#using-webpack-dev-server
 
 prod: main.e1ccc58bae260e3b3d62.js
 dev: main.js
+dev with webpack-dev-server: not js file is generated. All in memory.
+
 
 #############################################################################################
 
