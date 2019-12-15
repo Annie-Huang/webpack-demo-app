@@ -52,6 +52,10 @@ use: ['style-loader', 'css-loader'],
             }
             </style>
 
+-----------------------------------------
+
+filename: "main.[contentHash].js",
+    Add [contentHash] is to prevent cashing (Cache Busting and Plugins).
 
 #############################################################################################
 
