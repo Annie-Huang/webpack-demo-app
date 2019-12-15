@@ -21,6 +21,7 @@ https://webpack.js.org/guides/production/#setup
 https://webpack.js.org/guides/development/#using-webpack-dev-server
 
 https://webpack.js.org/loaders/html-loader/
+https://webpack.js.org/loaders/file-loader/
 
 
 prod: main.e1ccc58bae260e3b3d62.js
@@ -101,7 +102,7 @@ C:\react\webpack-demo-app>npm install --save-dev html-webpack-plugin
 C:\react\webpack-demo-app>npm install --save-dev webpack-merge
 C:\react\webpack-demo-app>npm install --save-dev webpack-dev-server
 C:\react\webpack-demo-app>npm i -D html-loader
-
+C:\react\webpack-demo-app>npm install file-loader --save-dev
 
 
 
