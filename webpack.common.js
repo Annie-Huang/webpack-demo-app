@@ -9,7 +9,7 @@ module.exports = {
         rules: [
             // {
             //     test: /\.css$/i,
-            //     use: ['style-loader', 'css-loader'],
+            //     use: ['style-loader', 'css-loader']
             // },
             {
                 test: /\.s[ac]ss$/i,
@@ -17,8 +17,19 @@ module.exports = {
                     'style-loader', // 3. Inject styles into DOM
                     'css-loader',   // 2. Turns css into commonjs
                     'sass-loader'   // 1. Turns sass into css
-                ],
+                ]
             },
+            // {
+            //     test: /\.(html)$/,
+            //     use: {
+            //         loader: 'html-loader'
+            //     }
+            // }
+            // This is the same as above.
+            {
+                test: /\.(html)$/,
+                use: ['html-loader']
+            }
         ],
     },
 };
