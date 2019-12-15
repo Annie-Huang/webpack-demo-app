@@ -17,6 +17,8 @@ https://github.com/webpack-contrib/awesome-webpack#webpack-plugins
 https://webpack.js.org/plugins/html-webpack-plugin/                   << React also use this plugin...
 https://github.com/jantimon/html-webpack-plugin#options
 
+https://webpack.js.org/guides/production/#setup
+
 #############################################################################################
 
 A bundler for javascript and friends. Packs many modules into a few bundled assets.
@@ -87,7 +89,7 @@ C:\react\webpack-demo-app>npm install --save-dev style-loader css-loader
 C:\react\webpack-demo-app>npm install --save-dev bootstrap
 C:\react\webpack-demo-app>npm install sass-loader node-sass --save-dev
 C:\react\webpack-demo-app>npm install --save-dev html-webpack-plugin
-
+C:\react\webpack-demo-app>npm install --save-dev webpack-merge
 
 
 
