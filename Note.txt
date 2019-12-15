@@ -20,6 +20,9 @@ https://github.com/jantimon/html-webpack-plugin#options
 https://webpack.js.org/guides/production/#setup
 https://webpack.js.org/guides/development/#using-webpack-dev-server
 
+https://webpack.js.org/loaders/html-loader/
+
+
 prod: main.e1ccc58bae260e3b3d62.js
 dev: main.js
 dev with webpack-dev-server: not js file is generated. All in memory.
@@ -97,7 +100,7 @@ C:\react\webpack-demo-app>npm install sass-loader node-sass --save-dev
 C:\react\webpack-demo-app>npm install --save-dev html-webpack-plugin
 C:\react\webpack-demo-app>npm install --save-dev webpack-merge
 C:\react\webpack-demo-app>npm install --save-dev webpack-dev-server
-
+C:\react\webpack-demo-app>npm i -D html-loader
 
 
 
