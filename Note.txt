@@ -19,6 +19,10 @@ https://github.com/jantimon/html-webpack-plugin#options
 
 https://webpack.js.org/guides/production/#setup
 
+
+prod: main.e1ccc58bae260e3b3d62.js
+dev: main.js
+
 #############################################################################################
 
 A bundler for javascript and friends. Packs many modules into a few bundled assets.
