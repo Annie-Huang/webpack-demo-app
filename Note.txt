@@ -15,7 +15,7 @@ https://webpack.js.org/configuration/plugins/
 https://webpack.js.org/plugins/
 https://github.com/webpack-contrib/awesome-webpack#webpack-plugins
 https://webpack.js.org/plugins/html-webpack-plugin/                   << React also use this plugin...
-
+https://github.com/jantimon/html-webpack-plugin#options
 
 #############################################################################################
 
