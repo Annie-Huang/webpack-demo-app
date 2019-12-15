@@ -86,7 +86,7 @@ Entrypoint main = main.js
 C:\react\webpack-demo-app>npm install --save-dev style-loader css-loader
 C:\react\webpack-demo-app>npm install --save-dev bootstrap
 C:\react\webpack-demo-app>npm install sass-loader node-sass --save-dev
-C:\react\webpack-demo-app>npm install --save-dev npm-install-webpack-plugin
+
 
 
 
