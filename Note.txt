@@ -22,7 +22,8 @@ https://webpack.js.org/guides/development/#using-webpack-dev-server
 
 https://webpack.js.org/loaders/html-loader/
 https://webpack.js.org/loaders/file-loader/
-
+https://stackoverflow.com/questions/59070216/webpack-file-loader-outputs-object-module
+https://stackoverflow.com/questions/59062150/html-loader-file-loader-not-bundling-the-correct-image-source
 
 prod: main.e1ccc58bae260e3b3d62.js
 dev: main.js
@@ -105,6 +106,13 @@ C:\react\webpack-demo-app>npm i -D html-loader
 C:\react\webpack-demo-app>npm install file-loader --save-dev
 
 
+According to
+ https://stackoverflow.com/questions/59070216/webpack-file-loader-outputs-object-module
+ https://stackoverflow.com/questions/59062150/html-loader-file-loader-not-bundling-the-correct-image-source
+You will need to add as options in the file-loader:
+esModule: false
+Otherwise,
+the generated index.html will have <img src="[object Module]"/>, not <img src="imgs/webpack.5a2bd87008f02c88ba55c698d5b412b2.svg"/>
 
 
 
