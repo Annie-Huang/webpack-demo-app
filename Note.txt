@@ -11,6 +11,12 @@ https://webpack.js.org/loaders/css-loader/
 https://webpack.js.org/loaders/style-loader/
 https://webpack.js.org/loaders/sass-loader/
 
+https://webpack.js.org/configuration/plugins/
+https://webpack.js.org/plugins/
+https://github.com/webpack-contrib/awesome-webpack#webpack-plugins
+https://webpack.js.org/plugins/npm-install-webpack-plugin/              << React also use this plugin...
+
+
 #############################################################################################
 
 A bundler for javascript and friends. Packs many modules into a few bundled assets.
@@ -56,6 +62,11 @@ use: ['style-loader', 'css-loader'],
 
 filename: "main.[contentHash].js",
     Add [contentHash] is to prevent cashing (Cache Busting and Plugins).
+    The [contentHash] is calculated against the content of the files bundled as part of webpack. JS, SCSS files. etc
+    Any of these files changes will cause a new hash key generated.
+
+HtmlWebpackPlugin - Easily create HTML files to serve your bundles
+    This is for generate the main.xxx.js file and inject it as a script tab in index.html
 
 #############################################################################################
 
@@ -75,7 +86,7 @@ Entrypoint main = main.js
 C:\react\webpack-demo-app>npm install --save-dev style-loader css-loader
 C:\react\webpack-demo-app>npm install --save-dev bootstrap
 C:\react\webpack-demo-app>npm install sass-loader node-sass --save-dev
-
+C:\react\webpack-demo-app>npm install --save-dev npm-install-webpack-plugin
 
 
 
