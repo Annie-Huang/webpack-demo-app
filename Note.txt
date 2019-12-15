@@ -14,7 +14,7 @@ https://webpack.js.org/loaders/sass-loader/
 https://webpack.js.org/configuration/plugins/
 https://webpack.js.org/plugins/
 https://github.com/webpack-contrib/awesome-webpack#webpack-plugins
-https://webpack.js.org/plugins/npm-install-webpack-plugin/              << React also use this plugin...
+https://webpack.js.org/plugins/html-webpack-plugin/                   << React also use this plugin...
 
 
 #############################################################################################
@@ -86,7 +86,7 @@ Entrypoint main = main.js
 C:\react\webpack-demo-app>npm install --save-dev style-loader css-loader
 C:\react\webpack-demo-app>npm install --save-dev bootstrap
 C:\react\webpack-demo-app>npm install sass-loader node-sass --save-dev
-
+C:\react\webpack-demo-app>npm install --save-dev html-webpack-plugin
 
 
 
