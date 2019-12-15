@@ -25,6 +25,9 @@ https://webpack.js.org/loaders/file-loader/
 https://stackoverflow.com/questions/59070216/webpack-file-loader-outputs-object-module
 https://stackoverflow.com/questions/59062150/html-loader-file-loader-not-bundling-the-correct-image-source
 
+https://webpack.js.org/guides/output-management/#cleaning-up-the-dist-folder
+
+
 prod: main.e1ccc58bae260e3b3d62.js
 dev: main.js
 dev with webpack-dev-server: not js file is generated. All in memory.
@@ -105,7 +108,6 @@ C:\react\webpack-demo-app>npm install --save-dev webpack-dev-server
 C:\react\webpack-demo-app>npm i -D html-loader
 C:\react\webpack-demo-app>npm install file-loader --save-dev
 
-
 According to
  https://stackoverflow.com/questions/59070216/webpack-file-loader-outputs-object-module
  https://stackoverflow.com/questions/59062150/html-loader-file-loader-not-bundling-the-correct-image-source
@@ -115,4 +117,6 @@ Otherwise,
 the generated index.html will have <img src="[object Module]"/>, not <img src="imgs/webpack.5a2bd87008f02c88ba55c698d5b412b2.svg"/>
 
 
+C:\react\webpack-demo-app>npm install --save-dev clean-webpack-plugin
+        << clean the /dist folder before each build, so that only used files will be generated.
 
