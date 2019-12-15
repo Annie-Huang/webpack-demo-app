@@ -118,5 +118,8 @@ the generated index.html will have <img src="[object Module]"/>, not <img src="i
 
 
 C:\react\webpack-demo-app>npm install --save-dev clean-webpack-plugin
-        << clean the /dist folder before each build, so that only used files will be generated.
+        << Clean the /dist folder before each build, so that only used files will be generated.
+           Only need to do it in webpack.prod.js
+
+
 
