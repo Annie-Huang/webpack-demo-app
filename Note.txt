@@ -29,7 +29,7 @@ https://webpack.js.org/guides/output-management/#cleaning-up-the-dist-folder
 https://getbootstrap.com/docs/4.4/components/navbar/
 https://getbootstrap.com/docs/4.4/getting-started/introduction/     << Show components requiring JavaScript
 https://webpack.js.org/plugins/mini-css-extract-plugin/
-
+https://github.com/NMFR/optimize-css-assets-webpack-plugin
 
 prod: main.e1ccc58bae260e3b3d62.js
 dev: main.js
@@ -126,5 +126,5 @@ C:\react\webpack-demo-app>npm install --save-dev clean-webpack-plugin
 
 C:\react\webpack-demo-app>npm install --save-dev jquery popper.js
 C:\react\webpack-demo-app>npm install --save-dev mini-css-extract-plugin
-
+C:\react\webpack-demo-app>npm install --save-dev optimize-css-assets-webpack-plugin
 

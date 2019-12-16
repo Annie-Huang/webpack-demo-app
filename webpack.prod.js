@@ -29,6 +29,8 @@ module.exports = merge(common, {
             // In Prod mode, we want extract css into its own files and auto injected as <link> into the <head> in index.html
             // (You can see this under index.html -> <head>)
             // That is why we use MiniCssExtractPlugin.loader.
+            // Because if we loaded it as part of the JS (at the end of the html file), the page may have a few milli-seconds without styling and looks bad.
+            // Keep it in a separate CSS file always make sure it is loaded first before the html body.
             {
                 test: /\.s[ac]ss$/i,
                 use: [
