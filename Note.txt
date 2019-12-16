@@ -28,6 +28,8 @@ https://stackoverflow.com/questions/59062150/html-loader-file-loader-not-bundlin
 https://webpack.js.org/guides/output-management/#cleaning-up-the-dist-folder
 https://getbootstrap.com/docs/4.4/components/navbar/
 https://getbootstrap.com/docs/4.4/getting-started/introduction/     << Show components requiring JavaScript
+https://webpack.js.org/plugins/mini-css-extract-plugin/
+
 
 prod: main.e1ccc58bae260e3b3d62.js
 dev: main.js
@@ -123,6 +125,6 @@ C:\react\webpack-demo-app>npm install --save-dev clean-webpack-plugin
            Only need to do it in webpack.prod.js
 
 C:\react\webpack-demo-app>npm install --save-dev jquery popper.js
-
+C:\react\webpack-demo-app>npm install --save-dev mini-css-extract-plugin
 
 
