@@ -26,6 +26,7 @@ https://stackoverflow.com/questions/59070216/webpack-file-loader-outputs-object-
 https://stackoverflow.com/questions/59062150/html-loader-file-loader-not-bundling-the-correct-image-source
 
 https://webpack.js.org/guides/output-management/#cleaning-up-the-dist-folder
+https://getbootstrap.com/docs/4.4/components/navbar/
 
 
 prod: main.e1ccc58bae260e3b3d62.js
