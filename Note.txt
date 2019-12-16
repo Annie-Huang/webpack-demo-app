@@ -27,7 +27,7 @@ https://stackoverflow.com/questions/59062150/html-loader-file-loader-not-bundlin
 
 https://webpack.js.org/guides/output-management/#cleaning-up-the-dist-folder
 https://getbootstrap.com/docs/4.4/components/navbar/
-
+https://getbootstrap.com/docs/4.4/getting-started/introduction/     << Show components requiring JavaScript
 
 prod: main.e1ccc58bae260e3b3d62.js
 dev: main.js
@@ -121,6 +121,8 @@ the generated index.html will have <img src="[object Module]"/>, not <img src="i
 C:\react\webpack-demo-app>npm install --save-dev clean-webpack-plugin
         << Clean the /dist folder before each build, so that only used files will be generated.
            Only need to do it in webpack.prod.js
+
+C:\react\webpack-demo-app>npm install --save-dev jquery popper.js
 
 
 
