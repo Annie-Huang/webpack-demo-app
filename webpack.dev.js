@@ -11,5 +11,24 @@ module.exports = merge(common, {
         // Go to chrome devtool > Elements tag > you will see main.bundle.js and vendor.bundle.js are generated
         filename: "[name].bundle.js",
         path: path.resolve(__dirname, "dist")
+    },
+    module: {
+        rules: [
+            // {
+            //     test: /\.css$/i,
+            //     use: ['style-loader', 'css-loader']
+            // },
+            // In Dev mode, we want the style to auto injected as <style> into the <head> in index.html
+            // (You can see this under Chrome devtool > Elements)
+            // That is why we use style-loader.
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    'style-loader', // 3. Inject styles into DOM
+                    'css-loader',   // 2. Turns css into commonjs
+                    'sass-loader'   // 1. Turns sass into css
+                ]
+            },
+        ]
     }
 });

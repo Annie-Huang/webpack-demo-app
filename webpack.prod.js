@@ -19,5 +19,24 @@ module.exports = merge(common, {
         // filename: "main.[contentHash].js",
         filename: "[name].[contentHash].bundle.js",
         path: path.resolve(__dirname, "dist")
+    },
+    module: {
+        rules: [
+            // {
+            //     test: /\.css$/i,
+            //     use: ['style-loader', 'css-loader']
+            // },
+            // In Prod mode, we want extract css into its own files and auto injected as <link> into the <head> in index.html
+            // (You can see this under Chrome devtool > Elements)
+            // That is why we use MiniCssExtractPlugin.loader.
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    MiniCssExtractPlugin.loader, // 3. Extra css into files
+                    'css-loader',   // 2. Turns css into commonjs
+                    'sass-loader'   // 1. Turns sass into css
+                ]
+            },
+        ]
     }
 });
