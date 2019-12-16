@@ -35,6 +35,7 @@ module.exports = merge(common, {
             new TerserPlugin(),
             new HtmlWebpackPlugin({
                 template: './src/template.html',
+                // Even through the output index.html is minified, you can still see the proper file in chrome dev tool.
                 minify: {
                     removeAttributeQuotes: true,
                     collapseWhitespace: true,
