@@ -3,6 +3,7 @@ const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = merge(common, {
     mode: "production",
@@ -19,6 +20,13 @@ module.exports = merge(common, {
         // filename: "main.[contentHash].js",
         filename: "[name].[contentHash].bundle.js",
         path: path.resolve(__dirname, "dist")
+    },
+    // The below syntax is not from the library official documentation of
+    // https://github.com/NMFR/optimize-css-assets-webpack-plugin
+    // If you ONLY have had OptimizeCssAssetsPlugin in minimizer, it will minimize css but it will override the default minimizer for js files.
+    // So add back the minimizer for js, which is terser-webpack-plugin
+    optimization: {
+        minimizer: [new OptimizeCssAssetsPlugin()]
     },
     module: {
         rules: [
