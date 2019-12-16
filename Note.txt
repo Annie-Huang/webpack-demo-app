@@ -16,6 +16,8 @@ https://webpack.js.org/plugins/
 https://github.com/webpack-contrib/awesome-webpack#webpack-plugins
 https://webpack.js.org/plugins/html-webpack-plugin/                   << React also use this plugin...
 https://github.com/jantimon/html-webpack-plugin#options
+https://github.com/jantimon/html-webpack-plugin#minification
+https://github.com/DanielRuf/html-minifier-terser#options-quick-reference
 
 https://webpack.js.org/guides/production/#setup
 https://webpack.js.org/guides/development/#using-webpack-dev-server
