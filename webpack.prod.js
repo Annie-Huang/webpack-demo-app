@@ -27,7 +27,7 @@ module.exports = merge(common, {
             //     use: ['style-loader', 'css-loader']
             // },
             // In Prod mode, we want extract css into its own files and auto injected as <link> into the <head> in index.html
-            // (You can see this under Chrome devtool > Elements)
+            // (You can see this under index.html -> <head>)
             // That is why we use MiniCssExtractPlugin.loader.
             {
                 test: /\.s[ac]ss$/i,

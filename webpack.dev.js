@@ -19,7 +19,7 @@ module.exports = merge(common, {
             //     use: ['style-loader', 'css-loader']
             // },
             // In Dev mode, we want the style to auto injected as <style> into the <head> in index.html
-            // (You can see this under Chrome devtool > Elements)
+            // (You can see this under Chrome devtool -> Elements)
             // That is why we use style-loader.
             {
                 test: /\.s[ac]ss$/i,
