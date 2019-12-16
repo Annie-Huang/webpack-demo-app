@@ -4,6 +4,9 @@ const common = require('./webpack.common.js');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+// This is installed as part of webpack: This is the default minimiser for Javascript
+const TerserPlugin = require("terser-webpack-plugin");
+
 
 module.exports = merge(common, {
     mode: "production",
@@ -26,7 +29,7 @@ module.exports = merge(common, {
     // If you ONLY have had OptimizeCssAssetsPlugin in minimizer, it will minimize css but it will override the default minimizer for js files.
     // So add back the minimizer for js, which is terser-webpack-plugin
     optimization: {
-        minimizer: [new OptimizeCssAssetsPlugin()]
+        minimizer: [new OptimizeCssAssetsPlugin(), new TerserPlugin()]
     },
     module: {
         rules: [
